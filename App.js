@@ -43,7 +43,16 @@ const App = () => {
   function deleteGoalHandler(id) {
     console.log('Delete');
     setCoursegoals((currentcourseGoals) => {
-      return currentcourseGoals.filter((goal) => goal.id !== id);
+      return currentcourseGoals.filter((goal) => {
+      if(goal.id !== id){
+        return true
+      }
+      else {
+        alert('you deleted a '+  goal.text);
+        return false;
+      }
+      }
+      );
     });
   }
 
@@ -79,7 +88,7 @@ const App = () => {
 style = StyleSheet.create({
   mainContainer: {
     //display: "flex",
-    padding: 10,
+    
     flex: 1,
   },
 

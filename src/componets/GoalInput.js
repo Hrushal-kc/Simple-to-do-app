@@ -36,7 +36,7 @@ const style = StyleSheet.create({
     inputtext: {
         //flex: 2,
         flexDirection: 'row',
-        justifyContent: 'space-around',
+        justifyContent: "space-between",
         borderBottomWidth: 2,
         borderBottomColor: 'white',
         marginBottom: 20,
@@ -48,12 +48,14 @@ const style = StyleSheet.create({
       textinput: {
         // borderWidth: 2,
         borderColor: 'black',
-        width: 300,
+        width: 250,
         color : "black",
         // backgroundColor : "#89ABE3FF",
         backgroundColor : "gray",
         fontSize : 20,
         borderRadius : 5,
+        height : 50,
+        justifyContent : "flex-start"
         
       },
     
@@ -62,6 +64,8 @@ const style = StyleSheet.create({
         backgroundColor: 'orange',
         padding: 15,
         marginLeft: 10,
-        borderRadius : 5
+        borderRadius : 5,
+        justifyContent : "flex-end"
+
       },    
 })
