@@ -3,6 +3,10 @@ import React from 'react';
 import {StyleSheet, Text, Pressable, View} from 'react-native';
 
 const GoalItem = (props) => {
+
+
+
+
   return (
     <Pressable
       onPress={props.onDeleteItem.bind(this, props.id)}

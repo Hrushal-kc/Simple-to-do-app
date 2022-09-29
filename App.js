@@ -31,6 +31,7 @@ const App = () => {
     if (enteredgoalText !== '') {
       setCoursegoals((currentcourseGoals) => [
         ...currentcourseGoals,
+        // {number : slNumber , id: Math.random().toString()},
         {text: enteredgoalText, id: Math.random().toString()},
       ]);
     }
